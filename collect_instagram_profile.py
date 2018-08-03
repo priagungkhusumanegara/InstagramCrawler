@@ -1,6 +1,6 @@
 __author__ = "Priagung Khusumanegara"
 __copyright__ = "Copyright 2018, Instagram Crawler"
-__credits__ = ["Instabot"]
+__credits__ = ["instabot"]
 __license__ = "GPL"
 __version__ = "1.0.0"
 __maintainer__ = "Prigung Khusumanegara"
@@ -28,6 +28,7 @@ with open('list_of_name.txt') as f:
 
 content = [x.strip() for x in content] 
 
+# append list of username from target list
 for val in content:
     bot.search_users(val)
     jsondata = bot.last_json
